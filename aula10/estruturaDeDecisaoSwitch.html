@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Decisão Switch</title>
+    <link rel="stylesheet" href="../_css/estilo.css">
+</head>
+<body>
+<div>
+    <h1>Estrutura de Decisão Switch</h1>
+    <p>A estrutura de decisão <strong>Switch</strong> é ultilizada quando nós temos várias opções, verificadas através de uma variável de controle</p>
+    <h2>Exercício 01 - Casos Simples</h2>
+    <p>Informe um número e selecione a operação desejada</p>
+    <form action="estruturaDeDecisaoSwitch.php" method="get">
+        Número: <input type="number" name="numero"><br>
+        <fieldset><legend>Operação</legend>
+            <label for="quadrado">Quadrado</label><input type="radio" name="operacao" id="quadrado" value="quadrado"><br>
+            <label for="cubo">Cubo</label><input type="radio" name="operacao" id="cubo" value="cubo"><br>           
+            <label for="raiz">Raiz Quadrada</label><input type="radio" name="operacao" id="raiz" value="raiz">
+        </fieldset>
+        <input type="submit" value="Verificar">
+    </form>
+    <h2>Exercício 02 - Casos Múltiplos</h2>
+    <p>Selecione um dia da semana, caso seja de segunda a sexta, você terá que trabalhar, caso fim de semana, estará de folga</p>
+    <form action="estruturaDeDecisaoSwitch.php" method="get">
+        <fieldset><legend>Dia da semana</legend>
+            <label for="domingo">domingo</label><input type="radio" name="dia" id="domingo" value="1"><br>
+            <label for="segunda">Segunda-Feira</label><input type="radio" name="dia" id="segunda" value="2"><br>
+            <label for="terca">Terça-Feira</label><input type="radio" name="dia" id="terca" value="3"><br>
+            <label for="quarta">Quarta-Feira</label><input type="radio" name="dia" id="quarta" value="4"><br>
+            <label for="quinta">Quinta-Feira</label><input type="radio" name="dia" id="quinta" value="5"><br>
+            <label for="sexta">Sexta-Feira</label><input type="radio" name="dia" id="sexta" value="6"><br>
+            <label for="sabado">Sábado</label><input type="radio" name="dia" id="sabado" value="7"><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
+ 
