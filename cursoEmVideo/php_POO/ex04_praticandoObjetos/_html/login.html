@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../_estilo/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Banco Curso em Vídeo</h1>
+            <p>Exercício para aplicar os conceitos de POO criando uma página de conta bancária</p>
+        </header>
+        <h2>Acessar a Conta</h2>
+        <form action="../_script/validacao.php" method="get">
+            <fieldset>
+                Número da conta: <input type="number" name="nome" id="iNome" size="20" required><br>
+                Senha: <input type="password" name="senha" required><br>
+                Tipo de conta: <select name="tipo">
+                    <option value="cc">Conta Corrente</option>
+                    <option value="cp">Conta Poupança</option>
+                </select>
+                <input type="submit" value="Confirmar">
+            </fieldset>
+        </form>
+        <nav>
+            <a href="index.html" target="_self" rel="prev">Retornar</a>
+        </nav>
+    </section>
+</body>
+</html>
