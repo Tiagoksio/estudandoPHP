@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco</title>
+    <title>Abertura de conta</title>
     <link rel="stylesheet" href="../_estilo/style.css">
 </head>
 <body>
     <section>
-            <header>
-                <h1>Banco Curso em Vídeo</h1>
-                <p>Exercício para aplicar os conceitos de POO criando uma página de conta bancária</p>
-            </header>
-            <h2>Selecione a Operação</h2>
-            <nav>
-                <a href="abrir-conta.html" target="_self" rel="next">Abrir Conta</a>
-                <a href="login.html" target="_self" rel="next">Acessar Conta</a>
-            </nav>
+        <header>
+            <h1>Banco Curso em Vídeo</h1>
+            <p>Exercício para aplicar os conceitos de POO criando uma página de conta bancária</p>
+        </header>
+        <h2>Abertura de Conta</h2>
+        <form action="../_script/pagina-conta.php" method="POST">
+            <fieldset>
+                Nome: <input type="text" name="nome" id="iNome" size="20" required><br>
+                Número da Conta: <input type="number" name="numConta" minlength="6" maxlength="6" placeholder="6 dígitos" required><br>
+                Tipo de conta: <select name="tipo">
+                    <option value="cc">Conta Corrente</option>
+                    <option value="cp">Conta Poupança</option>
+                </select>
+                <input type="submit" value="Confirmar">
+            </fieldset>
+        </form>
     </section>
 </body>
 </html>
