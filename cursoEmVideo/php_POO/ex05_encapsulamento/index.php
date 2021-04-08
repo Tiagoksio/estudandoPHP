@@ -9,7 +9,28 @@
 <body>
     <h1>Projeto Controle Remoto</h1>
     <?php
-        
+        require_once 'ControleRemoto.php';
+        $controle = new ControleRemoto();
+        $controle -> ligar();
+        $controle -> abrirMenu();
+
+        $controle -> maisVolume();
+        $controle -> maisVolume();
+        $controle -> maisVolume();
+        $controle -> maisVolume();
+        $controle -> abrirMenu();
+
+        $controle -> ligarMudo();
+        $controle -> abrirMenu();
+
+        $controle -> desligarMudo();
+        $controle -> abrirMenu();
+
+        $controle -> play();
+        $controle -> abrirMenu();
+
+        $controle -> desligar();
+        $controle -> abrirMenu();
     ?>
 </body>
 </html>
